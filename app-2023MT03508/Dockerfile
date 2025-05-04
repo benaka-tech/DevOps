@@ -7,8 +7,10 @@ WORKDIR /app
 # Copy the FastAPI application code into the container
 COPY main.py /app/
 
+COPY requirements.txt /app/
+
 # Install FastAPI and Uvicorn
-RUN pip install fastapi uvicorn prometheus-fastapi-instrumentator
+RUN pip install -r requirements.txt
 
 # Expose port 8000 for the application
 EXPOSE 8000

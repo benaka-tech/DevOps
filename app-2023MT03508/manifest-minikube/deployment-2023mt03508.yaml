@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: fastapi-container
-        image: jayanthc35/img-2023mt03508:v3
+        image: jayanthc35/img-2023mt03508:v4
         ports:
         - containerPort: 8000
         env:
